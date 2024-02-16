@@ -55,7 +55,18 @@ const BassicTab = ({ gridData, columnData, reportData }) => {
                         state={{reviewName: cell.row.original.REVIEW_NAME}} 
                         onClick={() => { funreviewPlan(cell.row.original.REVIEW_ID) }}
                         >Assessment</Link>
-                    }, } 
+                    },
+                 } 
+            }else if(res.rptColTyp == 'downloadLink'){
+                return {
+                    Header: res.rptColLabel, 
+                    accessor: res.rptColName, 
+                    Filter: ColumnFilter,
+                    width : calculateColumnWidth(1.0 * window.innerWidth, columnData.length),
+                    Cell : ({cell}) =>{
+                        return <a download={'Third-Party-Agreement-Sample.pdf'} href='./Third-Party-Agreement-Sample.pdf'>Download</a>
+                    },
+                }
             }else{
                 return { Header: res.rptColLabel,
                      accessor: res.rptColName,
