@@ -28,7 +28,7 @@ export const UserDataError = (getUserDataData)=>{
 export const FormUserDataInfo = (UserData,setdata)=>{  
     return function(dispatch){
         dispatch(UserDataReq())
-        axios.post(`http://192.168.100.236:8443/VueFrame-ver2-0.0.1-SNAPSHOT/auth/addNewUser`,UserData)
+        axios.post(`http://localhost:8080/auth/addNewUser`,UserData)
         .then((res)=>{
             dispatch(UserDataSuccess(res.data))
             setdata([])

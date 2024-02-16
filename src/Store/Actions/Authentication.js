@@ -25,7 +25,7 @@ export const AuthToken = (user) => {
     return (dispatch) => {
         dispatch(AuthReq())
         // console.log('user',user)
-        axios.post('http://192.168.100.236:8443/VueFrame-ver2-0.0.1-SNAPSHOT/auth/generateToken',user)
+        axios.post('http://localhost:8080/auth/generateToken',user)
             .then((response) => {
                 // console.log('response.data',response.data)
                 sessionStorage.setItem('userName',user.username)

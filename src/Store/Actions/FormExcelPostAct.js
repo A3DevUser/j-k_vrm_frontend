@@ -36,7 +36,7 @@ export const PostFormExcelData = (userId,data,token,
       };
     return (dispatch)=>{
         dispatch(FormExcelReq());
-        axios.post(`http://192.168.100.236:8443/VueFrame-ver2-0.0.1-SNAPSHOT/VF/callWorkflowProcedure?currLoggedInUser=${userId}`,data,{headers})
+        axios.post(`http://localhost:8080/VF/callWorkflowProcedure?currLoggedInUser=${userId}`,data,{headers})
         .then((res)=>{
             dispatch(FormExcelSuccess(res.data))
             if(window.location.pathname == '/addTable'){
