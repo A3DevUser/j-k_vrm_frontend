@@ -1,0 +1,24 @@
+.main-compo{
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+    grid-template-rows: 90vh;
+    /* width: 70vw; */
+}
+/* 
+.right-compo{
+    padding: 1rem;
+} */    
+
+/* .main-compo{
+    display: flex;
+    flex-direction: row;
+} */
+.right-compo{
+    /* max-width: 80vw !important; */
+    /* max-height: 100vh !important; */
+    /* max-width: 90vw; */
+    overflow-x: hidden;
+    margin-top: 1vh;
+    padding-left: 1em;
+    padding-right: 2.1em;
+}

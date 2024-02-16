@@ -1,0 +1,70 @@
+/* .ddClass{
+color: white;
+float: right;
+z-index: 999;
+margin: 15px;
+}
+
+.ddClassEle{
+    color: white;
+    z-index: 999;
+    margin: 15px;
+    display: inline-block;
+    } */
+
+    .ddClass {
+    color: white;
+    float: right;
+    z-index: 999;
+    margin: 15px;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    /* height: 2vh;
+    width: 3vw; */
+}
+
+.customIcon{
+    font-size: 30px;
+    }
+
+.ddClassEle {
+    color: white;
+    z-index: 999;
+    margin: 12px;
+    display: inline-block;
+    /* padding: 20px 40px 20px 25px !important; */
+}
+
+.click:focus{
+    background-color: rgb(145, 145, 145);
+}
+
+.navbar-background{
+    /* background-color: #091332; */
+    background-color:  #008080;
+    /* background-color:  #F0122D; */
+    /* background-color: #4D94DB; */
+    padding: 5px !important;
+    /* margin-bottom: 1rem; */
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+}
+
+.multiDrop{
+    background-color: transparent !important;
+    /* color: aliceblue; */
+    color: white;
+    font-size: 16px;
+    font-family: Trebuchet MS;
+    margin-left: 1.5vw;
+}
+
+/* .multiDrop:hover{
+    color: #03d6d6;
+} */
+
+.main-navBar{
+        display: flex;
+        align-items: center;
+
+}
